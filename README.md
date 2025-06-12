@@ -7,8 +7,11 @@ This repository contains code and scripts to reproduce the experiments from our 
 
 ## Features
 
-- **Baseline Calculation LOOCV**
-  - Class‐count simulation: We computed a “do‐nothing” weighted accuracy baseline by inputting the EUCT‑NS manual‐label class counts (72, 26, 43) into the Megahed et al. interactive simulator (http://rstudio.fsb.miamioh.edu:3838/megahefm/metric_interpretation/), yielding a baseline of 0.36 under random labeling.
+- **Baseline Calculations: LOOCV, Training the classifier and Active learning**
+ > **Note:** Each baseline calculation was created using the Megahed et al. interactive simulator (http://rstudio.fsb.miamioh.edu:3838/megahefm/metric_interpretation/)
+  - LOOCV: We computed a “do‐nothing” weighted accuracy baseline by inputting the EUCT‑NS manual‐label class counts (0:72, 1:26, 2:43) into the simulator, yielding a baseline of 0.36 under random labeling.
+  - Training the classifier: We computed a “do‐nothing” weighted recall baseline by inputting the EUCT‑NS manual‐label class counts into the simulator, yielding a baseline of 0.49 under random sampling
+  - Active learning: We computed a retrospective "do-nothing" weighted accuracy and recall using the class counts (0: 72, 1:31, 2:37) from the predicted labels of the active learning procedure into the simulator, yielding a baseline of 0.36 and 0.38, respectively.
 
 - **Leave-One-Out-Cross-Validation**
   - TF‑IDF (1–3 grams) + Complement Naïve Bayes  
