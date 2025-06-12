@@ -1,0 +1,13 @@
+# Requirements for Surrogate Endpoint Detection project
+# Tested with Python 3.11.9
+
+pandas>=1.5
+numpy>=1.23
+scikit-learn>=1.1
+matplotlib>=3.6
+joblib>=1.2
+tqdm>=4.64
+gensim>=4.2        # for GloVe embedding support
+torch>=2.0         # for SciBERT embeddings (optional)
+transformers>=4.30 # for SciBERT embeddings (optional)
+jupyter>=1.0       # to run the notebooks
